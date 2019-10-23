@@ -1,0 +1,214 @@
+html {
+  font-size: 0.8rem;
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: #7c573d;
+    color: #ffffff;
+}
+
+header {
+    background-color: #6f4e37;
+    border-bottom: 1px solid #ffffff;
+}
+
+.icon-bar {
+	width: 25px; 
+	height: 2px;
+	background-color: #ffffff;
+	display: block;
+	transition: all 0.2s;
+	margin-top: 5px
+}
+ 
+.custom-navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border-radius: .25rem;
+    height: 40px;
+    width: 56px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: none !important;
+}
+
+.navbar-dark .custom-navbar-toggler {
+    color: transparent;
+    border-color: transparent;
+}
+
+.custom-navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+  
+.custom-navbar-toggler .middle-bar {
+  opacity: 0;
+}
+  
+.custom-navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+  
+.custom-navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+  
+.custom-navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+  
+.custom-navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+.anchor {
+  position: relative;
+}
+
+.anchor a {
+  position: absolute;
+  left: 0;
+  top: -80px;
+}
+
+.navbar-collapse ul {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} 
+
+.wrapper {
+    position: relative;
+    top: 75px; 
+    padding-bottom: 120px;
+}
+
+#mission {
+  background-image: url("./images/mission-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 30vh;
+  padding: 0;
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img-top {
+  width: 250px;
+  height: 150px;
+}
+
+.card-body {
+  padding-top: 0.2rem;
+  padding-bottom: 0.6rem;
+}
+
+footer {
+  background-color: #6f4e37;
+  border-top: 1px solid #ffffff;
+  
+}
+
+#footer-text {
+  margin: auto 0;
+}
+
+.fa-facebook {
+    color: white;
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) and (orientation: landscape) { 
+  html {
+    font-size: 0.85rem;
+  }
+
+  #mission {
+    background-image: url("./images/mission-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 90vh;
+    padding: 0;
+  }
+
+  #mission-text {
+    display: block !important;
+    width: 100%;
+    background-color: #7c573d;
+    opacity: 0.6;
+    padding: 0 10%;
+  }
+
+  #mission-mobile {
+    display: none !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  html {
+    font-size: 1rem;
+  }
+
+  .navbar-collapse ul {
+    height: auto;
+  }
+
+  #mission {
+    background-image: url("./images/mission-background.jpg");
+    width: 90%;
+    height: 80vh;
+  }
+
+  #mission-text {
+      width: 100%;
+      background-color: #7c573d;
+      opacity: 0.6;
+      padding: 0 10%;
+  }
+
+  #store {
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 90px !important;
+  }
+
+  #contact {
+    width: 90%;
+    max-width: 800px;
+  }
+
+  #contact-content {
+    width: 70%
+  }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  #mission {
+    background-image: url("./images/mission-background.jpg");
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+  }
+} 
