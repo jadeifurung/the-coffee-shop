@@ -93,7 +93,7 @@ header {
 }
 
 #mission {
-  background-image: url("./images/mission-background.jpg");
+  background-image: url("./images/mission-background-md.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -146,7 +146,7 @@ footer {
   }
 
   #mission {
-    background-image: url("./images/mission-background.jpg");
+    background-image: url("./images/mission-background-md.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -179,7 +179,7 @@ footer {
   }
 
   #mission {
-    background-image: url("./images/mission-background.jpg");
+    background-image: url("./images/mission-background-md.jpg");
     width: 90%;
     height: 80vh;
   }
