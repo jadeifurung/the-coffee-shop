@@ -21,10 +21,15 @@
 </head>
 
 <body>
+  <div class="anchor">
+    <a id="top-target">&nbsp;</a>
+  </div>
   <header class="fixed-top px-0 zindex-fixed">
-    <nav class="navbar navbar-expand-md mx-3">
+    <nav class="navbar navbar-expand-md ml-3 mr-2">
       <span class="navbar-brand mb-0">
-        <img src="./images/logo.png" class="img-fluid" alt="The Coffee Shop Logo" />
+        <a href="#top-target">
+          <img src="./images/logo.png" class="img-fluid" alt="The Coffee Shop Logo" />
+        </a>
       </span>
       <button class="custom-navbar-toggler collapsed d-md-none" type="button" data-toggle="collapse"
         data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,25 +38,25 @@
         <span class="icon-bar bottom-bar"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav ml-auto text-white text-center" data-toggle="collapse"
+        <ul class="navbar-nav ml-auto text-center" data-toggle="collapse"
           data-target=".navbar-collapse.show">
           <li class="nav-item">
-            <a class="nav-link" href="#mission-target">
+            <a class="nav-link mx-md-2" href="#mission-target">
               Our Mission<span></span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#store-target">
+            <a class="nav-link mx-md-2" href="#store-target">
               Products
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#testimonials-target">
+            <a class="nav-link mx-md-2" href="#testimonials-target">
               Testimonials
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact-target">
+            <a class="nav-link mx-md-2" href="#contact-target">
               Contact Us
             </a>
           </li>
@@ -62,33 +67,30 @@
   <div class="wrapper px-4 px-md-0">
     <div class="anchor">
       <a id="mission-target">&nbsp;</a>
-      <section id="mission" class="container d-flex justify-content-center align-items-center">
-        <div id="mission-text" class="row d-none d-md-block">
-          <div class="col text-white text-justify">
-            <h1 class="display-4 font-weight-bold">Our Mission</h1>
-            <p class="lead mx-auto">
-              To operate a sustainable retail specialty coffee shop and wholesale coffee roasting
-              business in order to serve people and positively contribute to our local community
-              and our partner coffee-growing communities
-            </p>
-          </div>
+      <section class="jumbotron jumbotron-fluid">
+        <div class="container-fluid px-5 py-3 d-none d-md-block">
+          <h1 class="display-4 font-weight-bold">Our Mission</h1>
+          <p class="lead">
+            To operate a sustainable retail specialty coffee shop and wholesale coffee roasting
+            business in order to serve people and positively contribute to our local community
+            and our partner coffee-growing communities
+          </p>
         </div>
       </section>
     </div>
-    <section id="mission-mobile" class="container d-block d-md-none mt-4">
+    <div class="container d-block d-md-none">
       <div class="row">
-        <div class="col text-white text-justify">
-          <h2 class="display-4 font-weight-bold">Our Mission</h2>
-          <p class="lead mx-auto">
+        <div class="col text-white">
+          <h2 class="display-4 text-center font-weight-bold">Our Mission</h2>
+          <p class="lead text-justify">
             To operate a sustainable retail specialty coffee shop and wholesale coffee roasting
             business in order to serve people and positively contribute to our local community
             and our partner coffee-growing communities
           </p>
         </div>
       </div>
-    </section>
-
-    <section id="store" class="container mt-5">
+    </div>
+    <section class="store-section container mt-5 mx-auto">
       <div class="row ">
         <div class="col text-white text-center">
           <div class="anchor">
@@ -98,42 +100,42 @@
           <p class="lead mx-auto">Delicious, handcrafted beverages and great tasting food</p>
         </div>
       </div>
-      <div id="store-products" class="row mx-auto">
+      <div class="row mx-auto">
         <div class="d-flex justify-content-center flex-wrap">
           <div class="card bg-transparent text-white border-0 mx-1">
             <img class="card-img-top" src="./images/coffee.jpg" alt="Coffee" />
             <div class="card-body">
-              <h5 class="card-title text-center d-flex flex-column justify-content-end">Coffee</h5>
+              <h5 class="card-title text-center d-flex flex-column justify-content-end font-weight-bold">Coffee</h5>
             </div>
           </div>
           <div class="card bg-transparent text-white border-0 mx-1">
             <img class="card-img-top" src="./images/tea.jpg" alt="Tea" />
             <div class="card-body">
-              <h5 class="card-title text-center">Tea</h5>
+              <h5 class="card-title text-center font-weight-bold">Tea</h5>
             </div>
           </div>
           <div class="card bg-transparent text-white border-0 mx-1">
             <img class="card-img-top" src="./images/cheesecake.jpg" alt="Cake" />
             <div class="card-body">
-              <h5 class="card-title text-center">Cakes</h5>
+              <h5 class="card-title text-center font-weight-bold">Cakes</h5>
             </div>
           </div>
           <div class="card bg-transparent text-white border-0 mx-1">
             <img class="card-img-top" src="./images/donut.jpg" alt="Donut" />
             <div class="card-body">
-              <h5 class="card-title text-center">Donuts</h5>
+              <h5 class="card-title text-center font-weight-bold">Donuts</h5>
             </div>
           </div>
           <div class="card bg-transparent text-white border-0 mx-1">
             <img class="card-img-top" src="./images/sandwich.jpg" alt="Sandwich" />
             <div class="card-body">
-              <h5 class="card-title text-center">Sandwiches</h5>
+              <h5 class="card-title text-center font-weight-bold">Sandwiches</h5>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="testimonials" class="container mt-5 px-5 mx-auto">
+    <section class="testimonials-section container mt-5 mx-auto">
       <div class="row ">
         <div class="col text-white text-center">
           <div class="anchor">
@@ -279,7 +281,7 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="container mt-5">
+    <section class="contact-section container mt-5">
       <div class="row text-white text-center">
         <div class="col">
           <div class="anchor">
@@ -289,7 +291,7 @@
           <p class="lead mx-auto">We at The Coffee Shop would love to hear from you!</p>
         </div>
       </div>
-      <div id="contact-content" class="row text-white text-left mx-auto">
+      <div class="row text-white text-left mx-auto">
         <div class="col">
           <div class="row my-3">
             <div class="col">
@@ -323,9 +325,10 @@
     </section>
   </div>
 
-  <footer class="text-center px-1">
-    <small>info@thecoffeeshop.com | G/F Gateway Tower, Gen. Malvar St., Araneta Center, Quezon City
+  <footer class="text-center px-3 py-3">
+    <small>G/F Gateway Tower, Gen. Malvar St., Araneta Center, Quezon City
     </small>
+    <small>info@thecoffeeshop.com</small>
     <small>&copy; 2019 The Coffee Shop. All rights reserved.</small>
   </footer>
 
