@@ -1,6 +1,6 @@
 html {
-  font-size: 0.8rem;
   scroll-behavior: smooth;
+  font-size: 14px;
 }
 
 body {
@@ -25,7 +25,7 @@ header {
 .icon-bar {
 	width: 25px; 
 	height: 2px;
-	background-color: #ffffff;
+	background-color: #f5edda;
 	display: block;
 	transition: all 0.2s;
 	margin-top: 5px
@@ -33,21 +33,15 @@ header {
  
 .custom-navbar-toggler {
     padding: .25rem .75rem;
-    font-size: 1.25rem;
     line-height: 1;
     background-color: transparent;
     border-radius: .25rem;
     height: 40px;
     width: 56px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    outline: none !important;
-}
-
-.navbar-dark .custom-navbar-toggler {
     color: transparent;
     border-color: transparent;
 }
@@ -93,6 +87,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 1.25rem;
 } 
 
 .wrapper {
@@ -101,25 +96,13 @@ header {
     padding-bottom: 120px;
 }
 
-#mission {
-  background-image: url("./images/mission-background-md.jpg");
+.jumbotron {
+  background-image: url("./images/mission-background.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top left;
   background-repeat: no-repeat;
-  width: 90%;
-  height: 30vh;
-  padding: 0;
-}
-
-footer {
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #363636;
-  color: #f5edda;
-  border-top: 1px solid #f5edda;
+  height: 45vh;
+  min-height: 380px;
 }
 
 .card-img-top {
@@ -132,94 +115,80 @@ footer {
   padding-bottom: 0.6rem;
 }
 
-#testimonials {
-  max-width: 600px;
-  width: 100%;
+footer {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #363636;
+  color: #f5edda;
+  border-top: 1px solid #f5edda;
+  font-size: 1.2rem;
 }
 
-#footer-text {
-  margin: auto 0;
-}
-
-.fa-facebook {
-    color: white;
-}
-
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) and (orientation: landscape) { 
+@media (min-width: 500px) {
   html {
-    font-size: 0.85rem;
-  }
-
-  #mission {
-    background-image: url("./images/mission-background-md.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 90%;
-    height: 90vh;
-    padding: 0;
-  }
-
-  #mission-text {
-    display: block !important;
-    width: 100%;
-    background-color: #66462f;
-    opacity: 0.6;
-    padding: 0 10%;
-  }
-
-  #mission-mobile {
-    display: none !important;
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  html {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   .navbar-collapse ul {
     height: auto;
   }
 
-  #mission {
-    background-image: url("./images/mission-background-md.jpg");
-    width: 90%;
-    height: 80vh;
+  .jumbotron {
+    background-image: url("./images/mission-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top left;
+    height: 85vh;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  #mission-text {
-      width: 100%;
-      background-color: #66462f;
-      opacity: 0.6;
-      padding: 0 10%;
-  }
-
-  #store {
-    width: 90%;
-    max-width: 1000px;
-    margin-top: 90px !important;
-  }
-
-  #contact {
-    width: 90%;
-    max-width: 800px;
-  }
-
-  #contact-content {
-    width: 70%
+  .jumbotron .container-fluid {
+    background-color: #66462f;
+    opacity: 0.8;
   }
 }
 
+@media (min-width: 850px) { 
+  html {
+    font-size: 16px;
+  }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-  #mission {
+  .jumbotron {
     background-image: url("./images/mission-background.jpg");
-    width: 90%;
-    max-width: 1200px;
-    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .jumbotron .container-fluid {
+    background-color: #66462f;
+    opacity: 0.8;
+  }
+  
+  .store-section {
+    max-width: 1000px;
+  }
+
+  .testimonials-section {
+    max-width: 700px;
+  }
+
+  .contact-section {
+    max-width: 500px;
   }
 } 
