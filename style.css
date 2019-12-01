@@ -79,7 +79,7 @@ header {
 .anchor a {
   position: absolute;
   left: 0;
-  top: -80px;
+  top: -6rem;
 }
 
 .navbar-collapse ul {
@@ -92,7 +92,7 @@ header {
 
 .wrapper {
     position: relative;
-    top: 75px; 
+    top: 86px; 
     padding-bottom: 120px;
 }
 
