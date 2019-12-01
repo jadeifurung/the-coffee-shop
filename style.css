@@ -99,7 +99,7 @@ header {
 .jumbotron {
   background-image: url("./images/mission-background.jpg");
   background-size: cover;
-  background-position: top left;
+  background-position: bottom left;
   background-repeat: no-repeat;
   height: 45vh;
   min-height: 380px;
