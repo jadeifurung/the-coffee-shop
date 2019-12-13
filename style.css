@@ -4,7 +4,6 @@ html {
 }
 
 body {
-    background-color: #66462f;
     color: #f5edda;
 }
 
@@ -92,9 +91,11 @@ header {
 } 
 
 .wrapper {
+    background-color: #66462f;
     position: relative;
     top: 86px; 
     padding-bottom: 120px;
+    z-index: -1;
 }
 
 .jumbotron {
