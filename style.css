@@ -1,24 +1,85 @@
-html {
+
+* {
   scroll-behavior: smooth;
-  font-size: 14px;
+  box-sizing: border-box;
 }
 
 body {
-    color: #f5edda;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  color: #363636;
 }
+
 
 header {
     background-color: #363636;
     border-bottom: 1px solid #f5edda;
 }
 
+h1,
+h2,
+h3,
+h5,
+p {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Typography */
+
+
+
+.hero-text {
+  background-color: #66462f;
+  padding: 0.1em 0.5em;
+  opacity: .7;
+}
+
+.hero-header,
+.hero-body {
+  color: #f5edda;
+  text-align: center;
+  font-weight: 700;
+}
+
+@media (min-width: 500px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+
+/* || Layout */
+
+.container {
+  max-width: 1200px;
+  padding: 0 2em;
+}
+
+/* === navigation */
+
 .nav-link {
+  font-size: 1.125rem; 
   color: #f5edda;
   transition: color 250ms;
 }
 
 .nav-link:hover {
   color: #ca9e7b;
+}
+
+.jumbotron {
+  background-image: url("./images/background-img-sm.jpg");
+  background-color: #66462f;
+  background-size: cover;
+  padding: 10em 0 5em 0;
 }
 
 .icon-bar {
@@ -31,10 +92,10 @@ header {
 }
  
 .custom-navbar-toggler {
-    padding: .25rem .75rem;
+    padding: .25em .75em;
     line-height: 1;
     background-color: transparent;
-    border-radius: .25rem;
+    border-radius: .25em;
     height: 40px;
     width: 56px;
     display: flex;
@@ -43,7 +104,6 @@ header {
     justify-content: center;
     color: transparent;
     border-color: transparent;
-    outline: none !important;
 }
 
 .custom-navbar-toggler .top-bar {
@@ -79,118 +139,104 @@ header {
 .anchor a {
   position: absolute;
   left: 0;
-  top: -6rem;
+  top: -5em;
 }
 
 .navbar-collapse ul {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 1.25rem;
-} 
-
-.wrapper {
-    background-color: #66462f;
-    position: relative;
-    top: 86px; 
-    padding-bottom: 120px;
-    z-index: -1;
 }
 
-.jumbotron {
-  background-image: url("./images/mission-background.jpg");
-  background-size: cover;
-  background-position: bottom left;
-  background-repeat: no-repeat;
-  height: 45vh;
-  min-height: 380px;
+/* === section === */
+
+.section-header {
+  margin-bottom: .5em;
+}
+
+/* === products === */
+
+.card {
+  margin-bottom: 1em;
 }
 
 .card-img-top {
-  width: 250px;
-  height: 150px;
+  max-width: 500px;
+  height: 280px;
+  margin: 0 auto;
+  object-fit: cover;
 }
 
 .card-body {
-  padding-top: 0.2rem;
-  padding-bottom: 0.6rem;
+  padding-top: 0.2em;
+  padding-bottom: 0.6em;
+}
+
+/* === testimonials === */
+.testimonial {
+  margin-bottom: 1em;
+}
+
+/* === form === */
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .3em 2em .3em .2em;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #363636;
+  background-color: #fff;
+  border: 1px solid #363636;
+  border-radius: .25rem;
+  transition: transform 500ms;
+}
+
+textarea {
+  resize: none;
+  height: 200px;
+}
+
+.form-btn {
+  background-color: #66462f;
+  color: #f5edda;
+  align-self: flex-end;
+  padding: .25em 2em;
+  font-weight: 700;
+  text-align: right;
+  border-radius: .3em;
+  transition: background-color 500ms;
+}
+
+.form-btn:hover, .form-btn:focus {
+  background-color: #ca9e7b;
+  color: #363636;
 }
 
 footer {
-  height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 1.2rem;
   background-color: #363636;
   color: #f5edda;
   border-top: 1px solid #f5edda;
-  font-size: 1.2rem;
 }
 
 @media (min-width: 500px) {
-  html {
-    font-size: 16px;
-  }
-
-  .navbar-collapse ul {
-    height: auto;
-  }
-
   .jumbotron {
-    background-image: url("./images/mission-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: top left;
-    height: 85vh;
-    min-height: 380px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .jumbotron .container-fluid {
-    background-color: #66462f;
-    opacity: 0.8;
-  }
-}
-
-@media (min-width: 850px) { 
-  html {
-    font-size: 16px;
-  }
-
-  .jumbotron {
-    background-image: url("./images/mission-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 110vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
-  }
-
-  .jumbotron .container-fluid {
-    background-color: #66462f;
-    opacity: 0.8;
-  }
-  
-  .store-section {
-    max-width: 1000px;
-  }
-
-  .testimonials-section {
-    max-width: 700px;
-  }
-
-  .contact-section {
-    max-width: 500px;
+    background-image: url("./images/background-img-lg.jpg");
+    padding: 18em 0 12em 0;
   }
 } 
