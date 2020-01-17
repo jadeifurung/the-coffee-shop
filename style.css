@@ -19,7 +19,6 @@ header {
 
 h1,
 h2,
-h3,
 h5,
 p {
   margin-top: 0;
@@ -30,8 +29,6 @@ img {
 }
 
 /* Typography */
-
-
 
 .hero-text {
   background-color: #66462f;
@@ -44,6 +41,11 @@ img {
   color: #f5edda;
   text-align: center;
   font-weight: 700;
+}
+
+.reviewer,
+.contact-label {
+  font-size: 1.75rem;
 }
 
 @media (min-width: 500px) {
