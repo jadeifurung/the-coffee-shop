@@ -78,7 +78,7 @@ img {
 }
 
 .jumbotron {
-  background-image: url("./images/background-img-sm.jpg");
+  background-image: url("../images/background-img-sm.jpg");
   background-color: #66462f;
   background-size: cover;
   padding: 10em 0 5em 0;
@@ -238,7 +238,7 @@ footer {
 
 @media (min-width: 500px) {
   .jumbotron {
-    background-image: url("./images/background-img-lg.jpg");
+    background-image: url("../images/background-img-lg.jpg");
     padding: 18em 0 12em 0;
   }
 } 
